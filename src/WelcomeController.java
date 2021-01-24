@@ -22,6 +22,8 @@ public class WelcomeController{
      * Initializes the Welcome scene.
      */
     public void initialize(){
+        Image img = new Image("Images/start.png");
+        welcomebg.setImage(img);
     }
 
 

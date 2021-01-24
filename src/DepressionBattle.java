@@ -63,7 +63,7 @@ public class DepressionBattle {
         button18.setVisible(false);
         button19.setVisible(false);
         button20.setVisible(false);
-        Image img = new Image("Images/depression1.png");
+        Image img = new Image("Images/dq1.png");
         bg.setImage(img);
     }
 
@@ -110,6 +110,8 @@ public class DepressionBattle {
         button6.setVisible(true);
         button7.setVisible(true);
         button8.setVisible(true);
+        Image img = new Image("Images/dq1.png");
+        bg.setImage(img);
     }
     /**
      * Correct 2nd Answer prompt
@@ -129,6 +131,8 @@ public class DepressionBattle {
         button10.setVisible(true);
         button11.setVisible(true);
         button12.setVisible(true);
+        Image img = new Image("Images/dq2.png");
+        bg.setImage(img);
     }
     /**
      * Correct 3rd Answer prompt
@@ -147,6 +151,8 @@ public class DepressionBattle {
         button14.setVisible(true);
         button15.setVisible(true);
         button16.setVisible(true);
+        Image img = new Image("Images/dq3.png");
+        bg.setImage(img);
     }
 
     /**
@@ -166,6 +172,8 @@ public class DepressionBattle {
         button18.setVisible(true);
         button19.setVisible(true);
         button20.setVisible(true);
+        Image img = new Image("Images/dq5.png");
+        bg.setImage(img);
     }
     /**
      * Correct 5th Answer prompt
@@ -197,6 +205,8 @@ public class DepressionBattle {
         stage.setMinWidth(1100);
         stage.setResizable(false);
         stage.setScene(scene);
+        Image img = new Image("Images/dq1.png");
+        bg.setImage(img);
     }
 }
 

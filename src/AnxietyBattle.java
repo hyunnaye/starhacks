@@ -95,6 +95,8 @@ public class AnxietyBattle {
         button5.setVisible(true);
         button6.setVisible(true);
         button7.setVisible(true);
+        Image img = new Image("Images/aq2.png");
+        bg.setImage(img);
 
     }
     /**
@@ -113,6 +115,8 @@ public class AnxietyBattle {
         button9.setVisible(true);
         button10.setVisible(true);
         button11.setVisible(true);
+        Image img = new Image("Images/aq3.png");
+        bg.setImage(img);
 
     }
     /**
@@ -131,6 +135,8 @@ public class AnxietyBattle {
         button12.setVisible(true);
         button13.setVisible(true);
         button14.setVisible(true);
+        Image img = new Image("Images/aq2.png");
+        bg.setImage(img);
     }
 
     /**
@@ -148,6 +154,8 @@ public class AnxietyBattle {
         button15.setVisible(true);
         button17.setVisible(true);
         button18.setVisible(true);
+        Image img = new Image("Images/aq2.png");
+        bg.setImage(img);
     }
     /**
      * Correct 5th Answer prompt
