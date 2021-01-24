@@ -26,13 +26,13 @@
                     <children>
                         <Button fx:id="b3" alignment="BOTTOM_RIGHT" layoutX="190.0" layoutY="2.0" mnemonicParsing="false" onAction="#scene3b3" text="Raise your hand" />
                         <Button fx:id="b1" alignment="BOTTOM_RIGHT" layoutX="190.0" mnemonicParsing="false" onAction="#scene2b1" text="Wear the outfit" />
-                        <Button fx:id="b5" alignment="BOTTOM_RIGHT" layoutX="188.0" mnemonicParsing="false" onAction="#scene4b5" text="Accept the invite" />
+                        <Button fx:id="b5" alignment="BOTTOM_RIGHT" layoutX="181.0" mnemonicParsing="false" onAction="#scene4b5" text="Accept the invite" />
                     </children></Pane>
                 <Pane prefHeight="178.0" prefWidth="173.0">
                     <children>
                         <Button fx:id="b2" alignment="BOTTOM_RIGHT" layoutX="52.0" mnemonicParsing="false" onAction="#scene2b2" text="Put on a plain &#10;sweatshirt&#10;and jeans." />
                         <Button fx:id="b4" alignment="BOTTOM_RIGHT" layoutX="52.0" mnemonicParsing="false" onAction="#scene3b4" text="Just sit there" />
-                        <Button fx:id="b6" alignment="BOTTOM_RIGHT" layoutX="52.0" mnemonicParsing="false" onAction="#scene4b6" text="Decline the invite" />
+                        <Button fx:id="b6" alignment="BOTTOM_RIGHT" layoutX="39.0" mnemonicParsing="false" onAction="#scene4b6" text="Decline the invite" />
                     </children></Pane>
             </children></HBox>
     </children>

@@ -40,7 +40,6 @@ public class DepressionBattle {
     @FXML private Button button19;
     @FXML private Button button20;
 
-    @FXML private Text question;
 
 
     /**
@@ -98,7 +97,7 @@ public class DepressionBattle {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setHeaderText(null);
         alert.setTitle("Correct");
-        alert.setContentText("Correct! Try to be active and exercise. Know your limits, " +
+        alert.setContentText("Correct move! Try to be active and exercise. Know your limits, " +
                 "but sports can promote the release of endorphins, neurotransmitters that can help relieve pain and stress. " +
                 "Physical activity " + "can also stimulate the release of dopamine, norepinephrine," +
                 " and serotonin which may help boost your mood!");
@@ -111,10 +110,6 @@ public class DepressionBattle {
         button6.setVisible(true);
         button7.setVisible(true);
         button8.setVisible(true);
-        question.setText("Your chemistry class asks you to make cupcakes for the party tomorrow, \nbut you know you have" +
-                " to take care of your little sister, do laundry, \nand get all your homework" +
-                " done once you get home. \nDo you: ");
-
     }
     /**
      * Correct 2nd Answer prompt
@@ -123,7 +118,7 @@ public class DepressionBattle {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setHeaderText(null);
         alert.setTitle("Correct");
-        alert.setContentText("Set realistic goals for yourself. Know your \nlimits and when to say no.\n");
+        alert.setContentText("Correct move! Set realistic goals for yourself. Know your \nlimits and when to say no.\n");
 
         alert.showAndWait();
         button5.setVisible(false);
@@ -134,8 +129,6 @@ public class DepressionBattle {
         button10.setVisible(true);
         button11.setVisible(true);
         button12.setVisible(true);
-        question.setText("You realize how significantly the Depression \nMonster is impacting your life when you " +
-                "no longer find anything \nyou used to love doing fun. \nDo you: ");
     }
     /**
      * Correct 3rd Answer prompt
@@ -143,7 +136,7 @@ public class DepressionBattle {
     @FXML protected void correctAction3(){
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setHeaderText(null);
-        alert.setContentText("Try not to isolate yourself, and let others help you.\n");
+        alert.setContentText("Correct move! Try not to isolate yourself, and let others help you.\n");
         alert.setTitle("Correct");
         alert.showAndWait();
         button9.setVisible(false);
@@ -154,7 +147,6 @@ public class DepressionBattle {
         button14.setVisible(true);
         button15.setVisible(true);
         button16.setVisible(true);
-        question.setText("Your doctor recommends an antidepressant medication. Do you:");
     }
 
     /**
@@ -163,7 +155,7 @@ public class DepressionBattle {
     @FXML protected void correctAction4(){
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setHeaderText(null);
-        alert.setContentText("Expect your mood to improve gradually, not \nimmediately, when taking this medication.\n");
+        alert.setContentText("Correct move! Expect your mood to improve gradually, not \nimmediately, when taking this medication.\n");
         alert.setTitle("Correct");
         alert.showAndWait();
         button13.setVisible(false);
@@ -174,19 +166,37 @@ public class DepressionBattle {
         button18.setVisible(true);
         button19.setVisible(true);
         button20.setVisible(true);
-        question.setText("You have been dating your SO for \nalmost 8 months. As you think about it, \nbreaking up seems" +
-                " to be the best option. You care about them and don’t want them \nto feel burdened by you. Do you:");
     }
     /**
      * Correct 5th Answer prompt
      */
-    @FXML protected void correctAction5(){
+    @FXML protected void correctAction5(ActionEvent event){
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setHeaderText(null);
         alert.setTitle("Correct");
-        alert.setContentText(" Postpone important decisions, such as getting married or divorced, or changing jobs. " +
+        alert.setContentText("Correct move! Postpone important decisions, such as getting married or divorced, or changing jobs. " +
                 "Discuss decisions with others who know you well and may have a more objective view of your situation." );
         alert.showAndWait();
+
+        Alert alert1 = new Alert(Alert.AlertType.INFORMATION);
+        alert.setHeaderText(null);
+        alert.setTitle(null);
+        alert.setContentText("You have finally tamed the Depression Monster!" );
+        alert.showAndWait();
+
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("Welcome.fxml"));
+        Parent root = null;
+        try {
+            root = loader.load();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        Scene scene = new Scene(root);
+        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.setMinHeight(800);
+        stage.setMinWidth(1100);
+        stage.setResizable(false);
+        stage.setScene(scene);
     }
 }
 
