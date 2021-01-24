@@ -3,26 +3,21 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
 
-<GridPane alignment="center" hgap="10" prefHeight="800" prefWidth="1100" styleClass="root" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DepressionBattle">
+<GridPane alignment="center" hgap="10" prefHeight="800" prefWidth="1100" styleClass="root" vgap="10" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DepressionBattle">
   <columnConstraints>
-    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="687.0" minWidth="10.0" prefWidth="573.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="515.9999999999999" minWidth="10.0" prefWidth="515.9999999999999" />
   </columnConstraints>
   <rowConstraints>
     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
   </rowConstraints>
    <children>
       <ImageView fx:id="bg" fitHeight="800" fitWidth="1100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnSpan="2" GridPane.rowSpan="3" />
-      <Text fx:id="question" strokeType="OUTSIDE" strokeWidth="0.0" text="It’s the end of the school day, and you have &#10;sports practice soon. All you want to do is go home. Do you:" />
-      <Button fx:id="button1" mnemonicParsing="false" onAction="#neutralAction" text="Grab a snack and take a walk instead of going to practice." GridPane.halignment="CENTER" GridPane.rowIndex="1" />
       <Button fx:id="button2" mnemonicParsing="false" onAction="#badAction" text="Give in to your exhaustion and promise to do a Chloe &#10;Ting workout when you get home." GridPane.columnIndex="1" GridPane.rowIndex="1" />
-      <Button fx:id="button3" mnemonicParsing="false" onAction="#correctAction1" text="Fill up your water bottle and head to practice." GridPane.columnIndex="0" GridPane.rowIndex="2" />
+      <Button fx:id="button3" mnemonicParsing="false" onAction="#correctAction1" text="Fill up your water bottle and head to practice." GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
       <Button fx:id="button4" mnemonicParsing="false" onAction="#badAction" text=" Go home and watch TV." GridPane.columnIndex="1" GridPane.rowIndex="2" />
        <Button fx:id="button5" mnemonicParsing="false" onAction="#badAction" text="Smile and say that’s no problem" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
        <Button fx:id="button6" mnemonicParsing="false" onAction="#correctAction2" text="Politely say no, you cannot make the cupcakes." GridPane.columnIndex="1" GridPane.rowIndex="1" />
@@ -39,6 +34,7 @@
        <Button fx:id="button17" mnemonicParsing="false" onAction="#correctAction5" text="Wait until you’re in a better headspace &#10;to make this a decision." GridPane.halignment="CENTER" GridPane.rowIndex="1" />
        <Button fx:id="button18" mnemonicParsing="false" onAction="#badAction" text="Break up with them, saying “It’s not you, it’s me.”" GridPane.columnIndex="1" GridPane.rowIndex="1" />
        <Button fx:id="button19" mnemonicParsing="false" onAction="#badAction" text="Ignore these thoughts and pretend everything is fine." GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+      <Button fx:id="button1" mnemonicParsing="false" onAction="#neutralAction" text="Grab a snack and take a walk instead of going to practice." GridPane.halignment="CENTER" GridPane.rowIndex="1" />
        <Button fx:id="button20" mnemonicParsing="false" onAction="#neutralAction" text="Break up, but confide in them and &#10;ask to stay friends." GridPane.columnIndex="1" GridPane.rowIndex="2" />
    </children>
 </GridPane>

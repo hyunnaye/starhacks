@@ -63,7 +63,7 @@ public class DepressionBattle {
         button18.setVisible(false);
         button19.setVisible(false);
         button20.setVisible(false);
-        Image img = new Image("Images/dq1.png");
+        Image img = new Image("Images/dq4.png");
         bg.setImage(img);
     }
 

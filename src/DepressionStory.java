@@ -42,12 +42,6 @@ public class DepressionStory {
      * The Scene 2 button
      */
     @FXML public void scene2b1(){
-        Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setHeaderText(null);
-        alert.setContentText("You realize that if you love the outfit it doesn’t matter what anyone thinks. " +
-                "Besides, everyone is too focused on themselves to care what you are wearing.\n");
-        alert.setTitle(null);
-        alert.showAndWait();
         Image img = new Image("Images/ds2.png");
         bg.setImage(img);
         b3.setVisible(true);
@@ -59,11 +53,6 @@ public class DepressionStory {
      * The Scene 2 button
      */
     @FXML public void scene2b2(){
-        Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setHeaderText(null);
-        alert.setContentText("It’s better to be safe than sorry.");
-        alert.setTitle(null);
-        alert.showAndWait();
         Image img = new Image("Images/ds2.png");
         bg.setImage(img);
         b3.setVisible(true);
@@ -76,12 +65,6 @@ public class DepressionStory {
      * The Scene 3 button
      */
     @FXML public void scene3b3(){
-        Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setHeaderText(null);
-        alert.setContentText("Ms. Jones calls on you. You repeat the answer you came up with. Ms. Jones replies " +
-                "“Good job! That is correct!” You smile at the anxiety creature and say “Looks like I was right after all.”\n");
-        alert.setTitle(null);
-        alert.showAndWait();
         Image img = new Image("Images/as3.png");
         bg.setImage(img);
         b5.setVisible(true);
@@ -93,13 +76,6 @@ public class DepressionStory {
      * The Scene 3 button
      */
     @FXML public void scene3b4(){
-        Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setHeaderText(null);
-        alert.setContentText(" You shrink down into your seat, as you wait for someone to raise their hand." +
-                " Someone finally raises their hand and repeats the solution that was already on your paper. " +
-                "Ms. Jones replies with “Good job! That is correct!” Turns out you were right.");
-        alert.setTitle(null);
-        alert.showAndWait();
         Image img = new Image("Images/as3.png");
         bg.setImage(img);
         b5.setVisible(true);
@@ -112,19 +88,13 @@ public class DepressionStory {
      * The Scene 4 button
      */
     @FXML public void scene4b5(ActionEvent event){
-        Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setHeaderText(null);
-        alert.setContentText("(anxiety monster gets smaller: The girls look so happy that you are going to go. One of the girls says “ Yay! We can’t wait to see you there!”. \n" +
-                "When you go to the sleepover on Friday night, you have a blast. The girls are so nice. You all played board games, watched movies, and talked all night. \n");
-        alert.setTitle(null);
-        alert.showAndWait();
         Alert alert1 = new Alert(Alert.AlertType.INFORMATION);
         alert1.setHeaderText(null);
         alert1.setContentText("Time to Battle!");
         alert1.setTitle(null);
         alert1.showAndWait();
 
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("AnxietyBattle.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("DepressionBattle.fxml"));
         Parent root = null;
         try {
             root = loader.load();
@@ -145,11 +115,6 @@ public class DepressionStory {
      * The Scene 4 button
      */
     @FXML public void scene4b6(ActionEvent event){
-        Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setHeaderText(null);
-        alert.setContentText("The girls look very disappointed. One of the girls says “That’s ok. I guess we’ll see you in French class!”");
-        alert.setTitle(null);
-        alert.showAndWait();
         Alert alert1 = new Alert(Alert.AlertType.INFORMATION);
         alert1.setHeaderText(null);
         alert1.setContentText("Time to Battle!");
