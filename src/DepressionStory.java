@@ -65,7 +65,7 @@ public class DepressionStory {
      * The Scene 3 button
      */
     @FXML public void scene3b3(){
-        Image img = new Image("Images/as3.png");
+        Image img = new Image("Images/ds4.png");
         bg.setImage(img);
         b5.setVisible(true);
         b6.setVisible(true);
@@ -76,7 +76,7 @@ public class DepressionStory {
      * The Scene 3 button
      */
     @FXML public void scene3b4(){
-        Image img = new Image("Images/as3.png");
+        Image img = new Image("Images/ds4.png");
         bg.setImage(img);
         b5.setVisible(true);
         b6.setVisible(true);
@@ -88,6 +88,8 @@ public class DepressionStory {
      * The Scene 4 button
      */
     @FXML public void scene4b5(ActionEvent event){
+        b5.setVisible(false);
+        b6.setVisible(false);
         Alert alert1 = new Alert(Alert.AlertType.INFORMATION);
         alert1.setHeaderText(null);
         alert1.setContentText("Time to Battle!");
