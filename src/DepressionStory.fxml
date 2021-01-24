@@ -26,7 +26,7 @@
                     <children>
                         <Button fx:id="b3" alignment="BOTTOM_RIGHT" layoutX="183.0" layoutY="2.0" mnemonicParsing="false" onAction="#scene3b3" text="Get up and get&#10;ready for school" />
                         <Button fx:id="b1" alignment="BOTTOM_RIGHT" layoutX="183.0" mnemonicParsing="false" onAction="#scene2b1" text="Avoid work and &#10;go to sleep. " />
-                        <Button fx:id="b5" alignment="BOTTOM_RIGHT" layoutX="181.0" mnemonicParsing="false" onAction="#scene4b5" text="Sit with your friend &#10;and confide in them" />
+                        <Button fx:id="b5" alignment="BOTTOM_RIGHT" layoutX="172.0" mnemonicParsing="false" onAction="#scene4b5" text="Sit with your friend &#10;and confide in them" />
                     </children></Pane>
                 <Pane prefHeight="178.0" prefWidth="173.0">
                     <children>

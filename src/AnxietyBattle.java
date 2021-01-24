@@ -161,10 +161,10 @@ public class AnxietyBattle {
         alert.showAndWait();
 
         Alert alert1 = new Alert(Alert.AlertType.INFORMATION);
-        alert.setHeaderText(null);
-        alert.setTitle(null);
-        alert.setContentText("You have finally tamed the Anxiety Monster!" );
-        alert.showAndWait();
+        alert1.setHeaderText(null);
+        alert1.setTitle(null);
+        alert1.setContentText("You have finally tamed the Anxiety Monster!" );
+        alert1.showAndWait();
 
         FXMLLoader loader = new FXMLLoader(getClass().getResource("Welcome.fxml"));
         Parent root = null;
