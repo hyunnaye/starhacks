@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+
+
+<GridPane alignment="center" hgap="10" prefHeight="803" prefWidth="1111" styleClass="root" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AnxietyBattle">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <Pane prefHeight="380.0" prefWidth="649.0" />
+    </children>
+</GridPane>
