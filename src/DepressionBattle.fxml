@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<GridPane alignment="center" hgap="10" prefHeight="803" prefWidth="1111" styleClass="root" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DepressionBattle">
+<GridPane alignment="center" hgap="10" prefHeight="800" prefWidth="1100" styleClass="root" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DepressionBattle">
   <columnConstraints>
     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -15,26 +15,26 @@
     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
   </rowConstraints>
    <children>
-      <Text strokeType="OUTSIDE" strokeWidth="0.0" fx:id="question" text="It’s the end of the school day, and you have sports practice soon. All you want to do is go home. Do you:" />
-      <Button mnemonicParsing="false" fx:id="button1" onAction="#neutralAction" text="Grab a snack and take a walk instead of going to practice." GridPane.rowIndex="1" />
-      <Button mnemonicParsing="false" fx:id="button2" onAction="#badAction" text="Give in to your exhaustion and promise to do a Chloe Ting workout when you get home." GridPane.rowIndex="2" />
-      <Button mnemonicParsing="false" fx:id="button3" onAction="#correctAction1" text="Fill up your water bottle and head to practice." GridPane.columnIndex="1" GridPane.rowIndex="1" />
-      <Button mnemonicParsing="false" fx:id="button4" onAction="#badAction" text=" Go home and watch TV." GridPane.columnIndex="1" GridPane.rowIndex="2" />
-       <Button mnemonicParsing="false" fx:id="button5" onAction="#badAction" text="Smile and say that’s no problem" GridPane.rowIndex="1" />
-       <Button mnemonicParsing="false" fx:id="button6" onAction="#correctAction2" text="Politely say no, you cannot make the cupcakes." GridPane.rowIndex="2" />
-       <Button mnemonicParsing="false" fx:id="button7" onAction="#badAction" text="Say maybe, and risk facing everyone’s disappointment when you don’t show up with the cupcakes." GridPane.columnIndex="1" GridPane.rowIndex="1" />
-       <Button mnemonicParsing="false" fx:id="button8" onAction="#badAction" text="Accept, but make sure everyone sees how irritated and overworked you are." GridPane.columnIndex="1" GridPane.rowIndex="2" />
-       <Button mnemonicParsing="false" fx:id="button9" onAction="#neutralAction" text="Search online for ways other people are dealing with their monsters." GridPane.rowIndex="1" />
-       <Button mnemonicParsing="false" fx:id="button10" onAction="#correctAction3" text="Reach out to a close friend, family member, or trusted adult for help." GridPane.rowIndex="2" />
-       <Button mnemonicParsing="false" fx:id="button11" onAction="#neutralAction" text="Become determined to work on yourself, and take time for lots of self-care. " GridPane.columnIndex="1" GridPane.rowIndex="1" />
-       <Button mnemonicParsing="false" fx:id="button12" onAction="#badAction" text="Hide and avoid people so you don’t have to face these issues." GridPane.columnIndex="1" GridPane.rowIndex="2" />
-       <Button mnemonicParsing="false" fx:id="button13" onAction="#neutralAction" text="Take it as prescribed in hopes of immediate relief." GridPane.rowIndex="1" />
-       <Button mnemonicParsing="false" fx:id="button14" onAction="#badAction" text="Take 2 instead of 1 on bad days to improve your mood when you need it most." GridPane.rowIndex="2" />
-       <Button mnemonicParsing="false" fx:id="button15" onAction="#badAction" text="Take offense to this suggestion and don’t take medication you feel you don’t need." GridPane.columnIndex="1" GridPane.rowIndex="1" />
-       <Button mnemonicParsing="false" fx:id="button16" onAction="#correctAction4" text="Follow your doctor’s instructions, and only expect the medication to work slowly." GridPane.columnIndex="1" GridPane.rowIndex="2" />
-       <Button mnemonicParsing="false" fx:id="button17" onAction="#correctAction5" text="Wait until you’re in a better headspace to make this a decision." GridPane.rowIndex="1" />
-       <Button mnemonicParsing="false" fx:id="button18" onAction="#badAction" text="Break up with them, saying “It’s not you, it’s me.”" GridPane.rowIndex="2" />
-       <Button mnemonicParsing="false" fx:id="button19" onAction="#badAction" text="Ignore these thoughts and pretend everything is fine." GridPane.columnIndex="1" GridPane.rowIndex="1" />
-       <Button mnemonicParsing="false" fx:id="button20" onAction="#neutralAction" text="Break up, but confide in them and ask to stay friends." GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <Text fx:id="question" strokeType="OUTSIDE" strokeWidth="0.0" text="It’s the end of the school day, and you have sports practice soon. All you want to do is go home. Do you:" />
+      <Button fx:id="button1" mnemonicParsing="false" onAction="#neutralAction" text="Grab a snack and take a walk instead of going to practice." GridPane.rowIndex="1" />
+      <Button fx:id="button2" mnemonicParsing="false" onAction="#badAction" text="Give in to your exhaustion and promise to do a Chloe &#10;Ting workout when you get home." GridPane.rowIndex="2" />
+      <Button fx:id="button3" mnemonicParsing="false" onAction="#correctAction1" text="Fill up your water bottle and head to practice." GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Button fx:id="button4" mnemonicParsing="false" onAction="#badAction" text=" Go home and watch TV." GridPane.columnIndex="1" GridPane.rowIndex="2" />
+       <Button fx:id="button5" mnemonicParsing="false" onAction="#badAction" text="Smile and say that’s no problem" GridPane.rowIndex="1" />
+       <Button fx:id="button6" mnemonicParsing="false" onAction="#correctAction2" text="Politely say no, you cannot make the cupcakes." GridPane.rowIndex="2" />
+       <Button fx:id="button7" mnemonicParsing="false" onAction="#badAction" text="Say maybe, and risk facing everyone’s disappointment &#10;when you don’t show up with the cupcakes." GridPane.columnIndex="1" GridPane.rowIndex="1" />
+       <Button fx:id="button8" mnemonicParsing="false" onAction="#badAction" text="Accept, but make sure everyone sees how irritated &#10;and overworked you are." GridPane.columnIndex="1" GridPane.rowIndex="2" />
+       <Button fx:id="button9" mnemonicParsing="false" onAction="#neutralAction" text="Search online for ways other people are dealing with their monsters." GridPane.rowIndex="1" />
+       <Button fx:id="button10" mnemonicParsing="false" onAction="#correctAction3" text="Reach out to a close friend, family member,&#10; or trusted adult for help." GridPane.rowIndex="2" />
+       <Button fx:id="button11" mnemonicParsing="false" onAction="#neutralAction" text="Become determined to work on yourself, and &#10;take time for lots of &#10;self-care. " GridPane.columnIndex="1" GridPane.rowIndex="1" />
+       <Button fx:id="button12" mnemonicParsing="false" onAction="#badAction" text="Hide and avoid people so you don’t have to face these issues." GridPane.columnIndex="1" GridPane.rowIndex="2" />
+       <Button fx:id="button13" mnemonicParsing="false" onAction="#neutralAction" text="Take it as prescribed in hopes of immediate relief." GridPane.rowIndex="1" />
+       <Button fx:id="button14" mnemonicParsing="false" onAction="#badAction" text="Take 2 instead of 1 on bad days to improve your &#10;mood when you need it most." GridPane.rowIndex="2" />
+       <Button fx:id="button15" mnemonicParsing="false" onAction="#badAction" text="Take offense to this suggestion and don’t take medication you&#10; feel you don’t need." GridPane.columnIndex="1" GridPane.rowIndex="1" />
+       <Button fx:id="button16" mnemonicParsing="false" onAction="#correctAction4" text="Follow your doctor’s instructions, and only &#10;expect the medication to work slowly." GridPane.columnIndex="1" GridPane.rowIndex="2" />
+       <Button fx:id="button17" mnemonicParsing="false" onAction="#correctAction5" text="Wait until you’re in a better headspace &#10;to make this a decision." GridPane.rowIndex="1" />
+       <Button fx:id="button18" mnemonicParsing="false" onAction="#badAction" text="Break up with them, saying “It’s not you, it’s me.”" GridPane.rowIndex="2" />
+       <Button fx:id="button19" mnemonicParsing="false" onAction="#badAction" text="Ignore these thoughts and pretend everything is fine." GridPane.columnIndex="1" GridPane.rowIndex="1" />
+       <Button fx:id="button20" mnemonicParsing="false" onAction="#neutralAction" text="Break up, but confide in them and &#10;ask to stay friends." GridPane.columnIndex="1" GridPane.rowIndex="2" />
    </children>
 </GridPane>

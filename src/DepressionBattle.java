@@ -68,6 +68,7 @@ public class DepressionBattle {
      */
     @FXML protected void badAction(){
         Alert alert = new Alert(Alert.AlertType.ERROR);
+        alert.setTitle("Incorrect");
         alert.setHeaderText(null);
         alert.setContentText("This is a bad move to deal with the Depression Monster. Try to use another move!");
         alert.showAndWait();
@@ -78,6 +79,7 @@ public class DepressionBattle {
      */
     @FXML protected void neutralAction(){
         Alert alert = new Alert(Alert.AlertType.ERROR);
+        alert.setTitle("Incorrect");
         alert.setHeaderText(null);
         alert.setContentText("This is not a bad move to deal with the Depression Monster " +
                 "but there is definitely a better action to choose. Try to use another move!");
@@ -90,6 +92,7 @@ public class DepressionBattle {
     @FXML protected void correctAction1(){
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setHeaderText(null);
+        alert.setTitle("Correct");
         alert.setContentText("Correct! Try to be active and exercise. Know your limits, " +
                 "but sports can promote the release of endorphins, neurotransmitters that can help relieve pain and stress. " +
                 "Physical activity " + "can also stimulate the release of dopamine, norepinephrine," +
@@ -103,9 +106,9 @@ public class DepressionBattle {
         button6.setVisible(true);
         button7.setVisible(true);
         button8.setVisible(true);
-        question.setText("Your chemistry class asks you to make cupcakes for the party tomorrow, but you know you have" +
+        question.setText("Your chemistry class asks you to make cupcakes for the party tomorrow, \nbut you know you have" +
                 " to take care of your little sister, do laundry, and get all your homework" +
-                " done once you get home. Do you: ");
+                " done once you get home. \nDo you: ");
 
     }
     /**
@@ -114,6 +117,7 @@ public class DepressionBattle {
     @FXML protected void correctAction2(){
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setHeaderText(null);
+        alert.setTitle("Correct");
         alert.setContentText("Set realistic goals for yourself. Know your limits and when to say no.\n");
 
         alert.showAndWait();
@@ -126,16 +130,16 @@ public class DepressionBattle {
         button11.setVisible(true);
         button12.setVisible(true);
         question.setText("You realize how significantly the Depression Monster is impacting your life when you " +
-                "no longer find anything you used to love doing fun. Do you: ");
+                "no longer find anything you used to love doing fun. \nDo you: ");
     }
     /**
      * Correct 3rd Answer prompt
      */
     @FXML protected void correctAction3(){
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setHeaderText(null);
+        alert.setHeaderText("Correct");
         alert.setContentText("Try not to isolate yourself, and let others help you.\n");
-
+        alert.setTitle("Correct");
         alert.showAndWait();
         button9.setVisible(false);
         button10.setVisible(false);
@@ -155,7 +159,7 @@ public class DepressionBattle {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setHeaderText(null);
         alert.setContentText("Expect your mood to improve gradually, not immediately, when taking this medication.\n");
-
+        alert.setTitle("Correct");
         alert.showAndWait();
         button13.setVisible(false);
         button14.setVisible(false);
@@ -165,8 +169,8 @@ public class DepressionBattle {
         button18.setVisible(true);
         button19.setVisible(true);
         button20.setVisible(true);
-        question.setText("You have been dating your SO for almost 8 months. As you think about it, breaking up seems" +
-                " to be the best option. You care about them and don’t want them to feel burdened by you. Do you:");
+        question.setText("You have been dating your SO for almost 8 months. As you think about it, \nbreaking up seems" +
+                " to be the best option. You care about them and don’t want them \nto feel burdened by you. Do you:");
     }
     /**
      * Correct 5th Answer prompt
@@ -174,6 +178,7 @@ public class DepressionBattle {
     @FXML protected void correctAction5(){
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setHeaderText(null);
+        alert.setTitle("Correct");
         alert.setContentText(" Postpone important decisions, such as getting married or divorced, or changing jobs. " +
                 "Discuss decisions with others who know you well and may have a more objective view of your situation." );
         alert.showAndWait();

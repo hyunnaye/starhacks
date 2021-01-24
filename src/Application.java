@@ -21,8 +21,8 @@ public class Application extends javafx.application.Application {
         Scene scene = new Scene(root);
 
         primaryStage.setTitle("MonsterGame");
-        primaryStage.setMinHeight(834);
-        primaryStage.setMinWidth(1111);
+        primaryStage.setMinHeight(800);
+        primaryStage.setMinWidth(1100);
         primaryStage.setResizable(false);
         primaryStage.setScene(scene);
         primaryStage.show();
