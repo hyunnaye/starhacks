@@ -20,10 +20,9 @@ public class WelcomeController{
     public void initialize(){
     }
 
-    /**
-     * Creates a new scene and displays that scene.
-     */
-    public void setNewScene(ActionEvent event, FXMLLoader loader) {
+
+    @FXML protected void handleDepressionChoice(ActionEvent event){
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("DepressionBattle.fxml"));
         Parent root = null;
         try {
             root = loader.load();
@@ -34,6 +33,19 @@ public class WelcomeController{
         Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
 
         stage.setScene(scene);
-        stage.show();
+    }
+
+    @FXML protected void handleAnxietyChoice(ActionEvent event){
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("AnxietyBattle.fxml"));
+        Parent root = null;
+        try {
+            root = loader.load();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        Scene scene = new Scene(root);
+        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+
+        stage.setScene(scene);
     }
 }
