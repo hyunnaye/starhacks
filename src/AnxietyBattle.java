@@ -9,13 +9,12 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
 /**
- * The Welcome scene
+ * The Anxiety Battle scene
  */
 public class AnxietyBattle {
     @FXML private ImageView bg;

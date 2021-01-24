@@ -23,15 +23,15 @@
         <Button fx:id="button3" mnemonicParsing="false" onAction="#correctAction1" text="Workout at the gym" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
         <Button fx:id="button5" mnemonicParsing="false" onAction="#badAction" text="Keep watching the show." GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
         <Button fx:id="button6" mnemonicParsing="false" onAction="#correctAction2" text="Go to sleep." GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
-        <Button fx:id="button7" mnemonicParsing="false" onAction="#neutralAction" text="Continue to stay up late but read instead." GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+        <Button fx:id="button7" mnemonicParsing="false" onAction="#neutralAction" text="Continue to stay up &#10;late but read instead." GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
         <Button fx:id="button9" mnemonicParsing="false" onAction="#neutralAction" text="Watch TV" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
         <Button fx:id="button10" mnemonicParsing="false" onAction="#correctAction3" text="Meditate or do yoga to release tension" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
-        <Button fx:id="button11" mnemonicParsing="false" onAction="#badAction" text="Continue to do work that stresses you out." GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
-        <Button fx:id="button12" mnemonicParsing="false" onAction="#badAction" text="Continue working a lot and do nothing about feeling anxious" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+        <Button fx:id="button11" mnemonicParsing="false" onAction="#badAction" text="Continue to do work &#10;that stresses you out." GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+        <Button fx:id="button12" mnemonicParsing="false" onAction="#badAction" text="Continue working a lot and &#10;do nothing about feeling anxious" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
         <Button fx:id="button13" mnemonicParsing="false" onAction="#neutralAction" text="Take a nap." GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
-        <Button fx:id="button14" mnemonicParsing="false" onAction="#correctAction4" text="Go on a walk or pick up a new hobby. " GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+        <Button fx:id="button14" mnemonicParsing="false" onAction="#correctAction4" text="Go on a walk or &#10;pick up a new hobby. " GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
         <Button fx:id="button15" mnemonicParsing="false" onAction="#neutralAction" text=" Punch your pillow." GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
         <Button fx:id="button17" mnemonicParsing="false" onAction="#correctAction5" text="Write in a journal," GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
-        <Button fx:id="button18" mnemonicParsing="false" onAction="#badAction" text="Take out your anger by yelling at your little brother. " GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+        <Button fx:id="button18" mnemonicParsing="false" onAction="#badAction" text="Take out your anger by &#10;yelling at your little brother. " GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
     </children>
 </GridPane>

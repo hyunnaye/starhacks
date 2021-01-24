@@ -12,6 +12,9 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+/**
+ * The Depression story scene
+ */
 public class DepressionStory {
     @FXML private ImageView bg;
     @FXML private Button b1;
@@ -21,6 +24,9 @@ public class DepressionStory {
     @FXML private Button b5;
     @FXML private Button b6;
 
+    /**
+     * The Depression story initialized scene
+     */
     public void initialize(){
         Image img = new Image("Images/ds1.png");
         bg.setImage(img);
@@ -32,6 +38,9 @@ public class DepressionStory {
         b6.setVisible(false);
     }
 
+    /**
+     * The Scene 2 button
+     */
     @FXML public void scene2b1(){
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setHeaderText(null);
@@ -46,6 +55,9 @@ public class DepressionStory {
         b1.setVisible(false);
         b2.setVisible(false);
     }
+    /**
+     * The Scene 2 button
+     */
     @FXML public void scene2b2(){
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setHeaderText(null);
@@ -60,6 +72,9 @@ public class DepressionStory {
         b2.setVisible(false);
     }
 
+    /**
+     * The Scene 3 button
+     */
     @FXML public void scene3b3(){
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setHeaderText(null);
@@ -74,6 +89,9 @@ public class DepressionStory {
         b3.setVisible(false);
         b4.setVisible(false);
     }
+    /**
+     * The Scene 3 button
+     */
     @FXML public void scene3b4(){
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setHeaderText(null);
@@ -89,6 +107,10 @@ public class DepressionStory {
         b3.setVisible(false);
         b4.setVisible(false);
     }
+
+    /**
+     * The Scene 4 button
+     */
     @FXML public void scene4b5(ActionEvent event){
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setHeaderText(null);
@@ -119,6 +141,9 @@ public class DepressionStory {
 
     }
 
+    /**
+     * The Scene 4 button
+     */
     @FXML public void scene4b6(ActionEvent event){
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setHeaderText(null);
@@ -131,7 +156,7 @@ public class DepressionStory {
         alert1.setTitle(null);
         alert1.showAndWait();
 
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("AnxietyBattle.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("DepressionBattle.fxml"));
         Parent root = null;
         try {
             root = loader.load();
@@ -147,7 +172,4 @@ public class DepressionStory {
 
     }
 
-    @FXML public void changeToBattle(){
-
-    }
 }

@@ -15,7 +15,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 /**
- * The Welcome scene
+ * The Depression Battle scene
  */
 public class DepressionBattle {
     @FXML private ImageView bg;

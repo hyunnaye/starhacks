@@ -12,6 +12,9 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+/**
+ * The Anxiety Story scene
+ */
 public class AnxietyStory {
     @FXML private ImageView bg;
     @FXML private Button b1;
