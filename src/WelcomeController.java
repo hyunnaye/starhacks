@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.SubScene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -26,14 +27,14 @@ public class WelcomeController{
         Parent root = null;
         try {
             root = loader.load();
-        } catch (IOException e) {
+        }catch (IOException e){
             e.printStackTrace();
         }
         Scene scene = new Scene(root);
         Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
 
         stage.setScene(scene);
-    }
+        }
 
     @FXML protected void handleAnxietyChoice(ActionEvent event){
         FXMLLoader loader = new FXMLLoader(getClass().getResource("AnxietyBattle.fxml"));
