@@ -7,6 +7,8 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
@@ -16,6 +18,7 @@ import java.io.IOException;
  * The Welcome scene
  */
 public class DepressionBattle {
+    @FXML private ImageView bg;
     @FXML private Button button1;
     @FXML private Button button2;
     @FXML private Button button3;
@@ -61,6 +64,8 @@ public class DepressionBattle {
         button18.setVisible(false);
         button19.setVisible(false);
         button20.setVisible(false);
+        Image img = new Image("Images/depression1.png");
+        bg.setImage(img);
     }
 
     /**
@@ -107,7 +112,7 @@ public class DepressionBattle {
         button7.setVisible(true);
         button8.setVisible(true);
         question.setText("Your chemistry class asks you to make cupcakes for the party tomorrow, \nbut you know you have" +
-                " to take care of your little sister, do laundry, and get all your homework" +
+                " to take care of your little sister, do laundry, \nand get all your homework" +
                 " done once you get home. \nDo you: ");
 
     }
@@ -118,7 +123,7 @@ public class DepressionBattle {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setHeaderText(null);
         alert.setTitle("Correct");
-        alert.setContentText("Set realistic goals for yourself. Know your limits and when to say no.\n");
+        alert.setContentText("Set realistic goals for yourself. Know your \nlimits and when to say no.\n");
 
         alert.showAndWait();
         button5.setVisible(false);
@@ -129,15 +134,15 @@ public class DepressionBattle {
         button10.setVisible(true);
         button11.setVisible(true);
         button12.setVisible(true);
-        question.setText("You realize how significantly the Depression Monster is impacting your life when you " +
-                "no longer find anything you used to love doing fun. \nDo you: ");
+        question.setText("You realize how significantly the Depression \nMonster is impacting your life when you " +
+                "no longer find anything \nyou used to love doing fun. \nDo you: ");
     }
     /**
      * Correct 3rd Answer prompt
      */
     @FXML protected void correctAction3(){
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setHeaderText("Correct");
+        alert.setHeaderText(null);
         alert.setContentText("Try not to isolate yourself, and let others help you.\n");
         alert.setTitle("Correct");
         alert.showAndWait();
@@ -158,7 +163,7 @@ public class DepressionBattle {
     @FXML protected void correctAction4(){
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setHeaderText(null);
-        alert.setContentText("Expect your mood to improve gradually, not immediately, when taking this medication.\n");
+        alert.setContentText("Expect your mood to improve gradually, not \nimmediately, when taking this medication.\n");
         alert.setTitle("Correct");
         alert.showAndWait();
         button13.setVisible(false);
@@ -169,7 +174,7 @@ public class DepressionBattle {
         button18.setVisible(true);
         button19.setVisible(true);
         button20.setVisible(true);
-        question.setText("You have been dating your SO for almost 8 months. As you think about it, \nbreaking up seems" +
+        question.setText("You have been dating your SO for \nalmost 8 months. As you think about it, \nbreaking up seems" +
                 " to be the best option. You care about them and don’t want them \nto feel burdened by you. Do you:");
     }
     /**
