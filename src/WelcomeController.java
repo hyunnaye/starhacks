@@ -26,7 +26,7 @@ public class WelcomeController{
 
 
     @FXML protected void handleDepressionChoice(ActionEvent event){
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("DepressionBattle.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("DepressionStory.fxml"));
         Parent root = null;
         try {
             root = loader.load();
@@ -43,7 +43,7 @@ public class WelcomeController{
 
 
     @FXML protected void handleAnxietyChoice(ActionEvent event){
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("AnxietyBattle.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("AnxietyStory.fxml"));
         Parent root = null;
         try {
             root = loader.load();

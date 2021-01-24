@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" prefHeight="800" prefWidth="1100" styleClass="root" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DepressionStory">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <Pane prefHeight="380.0" prefWidth="649.0" GridPane.columnSpan="2" GridPane.rowSpan="3">
+            <children>
+                <ImageView fx:id="bg" fitHeight="800.0" fitWidth="1100.0" pickOnBounds="true" preserveRatio="true" />
+            </children></Pane>
+        <HBox prefHeight="10.0" prefWidth="50.0" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.rowSpan="2" GridPane.valignment="BOTTOM">
+            <children>
+                <Pane prefHeight="178.0" prefWidth="309.0">
+                    <children>
+                        <Button fx:id="b3" alignment="BOTTOM_RIGHT" layoutX="183.0" layoutY="2.0" mnemonicParsing="false" onAction="#scene3b3" text="Get up and get&#10;ready for school" />
+                        <Button fx:id="b1" alignment="BOTTOM_RIGHT" layoutX="183.0" mnemonicParsing="false" onAction="#scene2b1" text="Avoid work and &#10;go to sleep. " />
+                        <Button fx:id="b5" alignment="BOTTOM_RIGHT" layoutX="181.0" mnemonicParsing="false" onAction="#scene4b5" text="Sit with your friend &#10;and confide in them" />
+                    </children></Pane>
+                <Pane prefHeight="178.0" prefWidth="173.0">
+                    <children>
+                        <Button fx:id="b2" alignment="BOTTOM_RIGHT" layoutX="32.0" mnemonicParsing="false" onAction="#scene2b2" text="Make some tea &#10;and commit&#10;to completing &#10;at least &#10;one task." />
+                        <Button fx:id="b4" alignment="BOTTOM_RIGHT" layoutX="32.0" mnemonicParsing="false" onAction="#scene3b4" text="Just 5 more &#10;minutes!" />
+                        <Button fx:id="b6" alignment="BOTTOM_RIGHT" layoutX="32.0" mnemonicParsing="false" onAction="#scene4b6" text="Sit in the &#10;back of the bus, &#10;throw some &#10;earbuds in, &#10;and play music" />
+                    </children></Pane>
+            </children></HBox>
+    </children>
+</GridPane>
